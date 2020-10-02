@@ -8,3 +8,7 @@ Content-Type: aplication/json
     "carrera": "Ingenieria de Sistemas"
     "edad": 19
 }
+
+###
+GET http://localhost:8080/student\?student_id=1
+git

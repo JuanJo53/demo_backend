@@ -8,9 +8,9 @@ import javax.persistence.*;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Autoincrement
-    @Column(name = "contact_id")
+    @Column(name = "student_id")
     @Basic(optional = false)
-    private Integer contactId;
+    private Integer studentId;
     @Column(name = "first_name")
     @Basic(optional = false)
     private String firstName;
@@ -28,11 +28,11 @@ public class Student {
     }
 
     public Integer getContactId() {
-        return contactId;
+        return studentId;
     }
 
     public void setContactId(Integer contactId) {
-        this.contactId = contactId;
+        this.studentId = studentId;
     }
 
     public String getFirstName() {
@@ -79,7 +79,7 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "studentId=" + contactId +
+                "studentId=" + studentId +
                 ", firstName='" + firstName + '\'' +
                 ", secondName='" + secondName + '\'' +
                 ", carnetIdentidad='" + carnetIdentidad + '\'' +
