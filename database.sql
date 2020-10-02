@@ -24,15 +24,13 @@ CREATE TABLE contact (
 
 -- Table: student
 CREATE TABLE student (
-    contact_id int NOT NULL AUTO_INCREMENT COMMENT 'Llave primaria de la tabla.',
+    student_id int NOT NULL AUTO_INCREMENT COMMENT 'Llave primaria de la tabla.',
     first_name varchar(50) NOT NULL,
     second_name varchar(50) NULL,
-    first_surname varchar(50) NOT NULL,
-    second_surname varchar(50) NULL,
     carrera varchar(50) NULL,
+    carnet_identidad varchar(50) NULL,
     edad int NULL,
-    semestre int NULL,
-    CONSTRAINT contact_pk PRIMARY KEY (contact_id)
+    CONSTRAINT contact_pk PRIMARY KEY (student_id)
 );
 
 -- Table: email

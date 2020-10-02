@@ -1,0 +1,10 @@
+POST http://localhost:8080/student
+Content-Type: aplication/json
+
+{
+    "firstName": "Ximena"
+    "secondName": "Cruz"
+    "carnetIdentidad": "4567899"
+    "carrera": "Ingenieria de Sistemas"
+    "edad": 19
+}

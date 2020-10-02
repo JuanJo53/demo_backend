@@ -16,38 +16,15 @@ public class Student {
     private String firstName;
     @Column(name = "second_name")
     private String secondName;
-    @Column(name = "first_surname")
-    @Basic(optional = false)
-    private String firstSurname;
-    @Column(name = "second_surname")
-    private String secondSurname;
     @Column(name = "carnet_identidad")
     private String carnetIdentidad;
     @Column(name = "carrera")
     private String carrera;
     @Column(name = "edad")
     private Integer edad;
-    @Column(name = "semestre")
-    private Integer semestre;
 
     public Student() {
 
-    }
-
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "contactId=" + contactId +
-                ", firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
-                ", firstSurname='" + firstSurname + '\'' +
-                ", secondSurname='" + secondSurname + '\'' +
-                ", carnetIdentidad='" + carnetIdentidad + '\'' +
-                ", carrera='" + carrera + '\'' +
-                ", edad=" + edad +
-                ", semestre=" + semestre +
-                '}';
     }
 
     public Integer getContactId() {
@@ -74,22 +51,6 @@ public class Student {
         this.secondName = secondName;
     }
 
-    public String getFirstSurname() {
-        return firstSurname;
-    }
-
-    public void setFirstSurname(String firstSurname) {
-        this.firstSurname = firstSurname;
-    }
-
-    public String getSecondSurname() {
-        return secondSurname;
-    }
-
-    public void setSecondSurname(String secondSurname) {
-        this.secondSurname = secondSurname;
-    }
-
     public String getCarnetIdentidad() {
         return carnetIdentidad;
     }
@@ -114,11 +75,16 @@ public class Student {
         this.edad = edad;
     }
 
-    public Integer getSemestre() {
-        return semestre;
-    }
 
-    public void setSemestre(Integer semestre) {
-        this.semestre = semestre;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + contactId +
+                ", firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", carnetIdentidad='" + carnetIdentidad + '\'' +
+                ", carrera='" + carrera + '\'' +
+                ", edad=" + edad +
+                '}';
     }
 }

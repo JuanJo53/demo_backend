@@ -1,13 +1,12 @@
 package bo.edu.ucb.demo.Backend.bl;
 
-import bo.edu.ucb.demo.Backend.dao.ContactRepository;
 import bo.edu.ucb.demo.Backend.dao.StudentRepository;
-import bo.edu.ucb.demo.Backend.model.Contact;
 import bo.edu.ucb.demo.Backend.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-
+@Service
 public class StudentBl {
     private StudentRepository studentRepository;
 
