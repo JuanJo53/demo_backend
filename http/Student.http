@@ -1,4 +1,5 @@
 POST http://localhost:8080/student
+<<<<<<< HEAD
 Content-Type: application/json
 
 {
@@ -25,3 +26,18 @@ DELETE http://localhost:8080/student/?studentId=1
 Content-Type: application/json
 
 ###
+=======
+Content-Type: aplication/json
+
+{
+    "firstName": "Ximena"
+    "secondName": "Cruz"
+    "carnetIdentidad": "4567899"
+    "carrera": "Ingenieria de Sistemas"
+    "edad": 19
+}
+
+###
+GET http://localhost:8080/student\?student_id=1
+git
+>>>>>>> c41c76898d88cc11f7ae3db716212e775bce9d85

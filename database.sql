@@ -22,6 +22,17 @@ CREATE TABLE contact (
     CONSTRAINT contact_pk PRIMARY KEY (contact_id)
 );
 
+-- Table: student
+CREATE TABLE student (
+    student_id int NOT NULL AUTO_INCREMENT COMMENT 'Llave primaria de la tabla.',
+    first_name varchar(50) NOT NULL,
+    second_name varchar(50) NULL,
+    carrera varchar(50) NULL,
+    carnet_identidad varchar(50) NULL,
+    edad int NULL,
+    CONSTRAINT contact_pk PRIMARY KEY (student_id)
+);
+
 -- Table: email
 CREATE TABLE email (
     email_id int NOT NULL AUTO_INCREMENT,
@@ -37,6 +48,7 @@ CREATE TABLE phone (
     contact_contact_id int NOT NULL,
     CONSTRAINT phone_pk PRIMARY KEY (phone_id)
 );
+
 
 -- foreign keys
 -- Reference: address_contact (table: address)
