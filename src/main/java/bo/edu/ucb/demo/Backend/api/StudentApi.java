@@ -20,7 +20,6 @@ public class StudentApi {
     }
 
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-<<<<<<< HEAD
     public Student obtener(@RequestParam Integer studentId) {
         return studentBl.findStudentByPk(studentId);
     }
@@ -33,10 +32,9 @@ public class StudentApi {
     @RequestMapping(method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
     public void eliminar(@RequestParam Integer studentId) {
         studentBl.deleteStudent(studentId);
-=======
+    }
     public Student find(@RequestParam Integer student) {
         return studentBl.findStudentByPk(student);
->>>>>>> c41c76898d88cc11f7ae3db716212e775bce9d85
     }
 
 }

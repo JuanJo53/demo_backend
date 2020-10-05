@@ -11,11 +11,9 @@ public class Student {
     @Column(name = "student_id")
     @Basic(optional = false)
     private Integer studentId;
-<<<<<<< HEAD
     @Column(name = "full_name")
     @Basic(optional = false)
     private String fullName;
-=======
     @Column(name = "first_name")
     @Basic(optional = false)
     private String firstName;
@@ -28,12 +26,10 @@ public class Student {
     @Column(name = "edad")
     private Integer edad;
 
->>>>>>> c41c76898d88cc11f7ae3db716212e775bce9d85
     public Student() {
 
     }
 
-<<<<<<< HEAD
     @Override
     public String toString() {
         return "Student{" +
@@ -43,9 +39,6 @@ public class Student {
     }
 
     public Integer getStudentId() {
-        return studentId;
-=======
-    public Integer getContactId() {
         return studentId;
     }
 
@@ -87,32 +80,17 @@ public class Student {
 
     public Integer getEdad() {
         return edad;
->>>>>>> c41c76898d88cc11f7ae3db716212e775bce9d85
     }
 
     public void setStudentId(Integer studentId) {
         this.studentId = studentId;
     }
 
-<<<<<<< HEAD
     public String getFullName() {
         return fullName;
     }
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
-=======
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "studentId=" + studentId +
-                ", firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
-                ", carnetIdentidad='" + carnetIdentidad + '\'' +
-                ", carrera='" + carrera + '\'' +
-                ", edad=" + edad +
-                '}';
->>>>>>> c41c76898d88cc11f7ae3db716212e775bce9d85
     }
 }
