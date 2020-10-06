@@ -11,9 +11,6 @@ public class Student {
     @Column(name = "student_id")
     @Basic(optional = false)
     private Integer studentId;
-    @Column(name = "full_name")
-    @Basic(optional = false)
-    private String fullName;
     @Column(name = "first_name")
     @Basic(optional = false)
     private String firstName;
@@ -34,7 +31,11 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "studentId=" + studentId +
-                ", fullName='" + fullName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", carnetIdentidad='" + carnetIdentidad + '\'' +
+                ", carrera='" + carrera + '\'' +
+                ", edad=" + edad +
                 '}';
     }
 
@@ -42,10 +43,9 @@ public class Student {
         return studentId;
     }
 
-    public void setContactId(Integer contactId) {
+    public void setStudentId(Integer studentId) {
         this.studentId = studentId;
     }
-
     public String getFirstName() {
         return firstName;
     }
@@ -82,15 +82,4 @@ public class Student {
         return edad;
     }
 
-    public void setStudentId(Integer studentId) {
-        this.studentId = studentId;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
 }
